@@ -2,17 +2,16 @@
 Rest API for Northwind database
 
 # Section 1
-1.<b>DDL_Statements.sql</b> 
+1.<b>DDL_Statements.sql</b><br>
 File contains the DDL queries for creation of table in the northwind database.
 
-2. <b>Loading_data.sql</b>
+2. <b>Loading_data.sql</b><br>
 File contains script for loading data from .csv files.
-<b>Note: </b><br> Please change the .csv file locations according to your local environment in this file.
+<br><b>Note: </b> Please change the .csv file locations according to your local environment in this file.
 
 # Section 2
-<b>Section2_Queries.sql</b>
-This contains below five queries:
-
+<b>Section2_Queries.sql</b><br>
+This contains below five queries:<br>
 1. List all the products with cost above the average price of the products.
 2. Give the identifier, name, and total sales of employees, ordered by the employee identifier for employees who have sold more than 70 different products.
 3. Identify the customers who have active orders.
@@ -34,10 +33,10 @@ This contains below five queries:
 
 BASE_URL = http://localhost:8080/api/v1
 
-1. Insert, update and select on customers
-<b>Insert : BASE_URL+/customers</b>
-<b>POST Request</b>
-It should be accompanied with a JSON object in the body, similar to customer object structure.
+1. Insert, update and select on customers<br>
+<b>Insert : BASE_URL+/customers</b><br>
+<b>POST Request</b><br>
+It should be accompanied with a JSON object in the body, similar to customer object structure.<br>
 For eg.
 {
     "customerId": "MIMEA",
@@ -53,23 +52,23 @@ For eg.
     "fax": "91-8947082516"
 }
 
-<b>Update : BASE_URL+/customers</b>
-<b>POST Request</b>
+<b>Update : BASE_URL+/customers</b><br>
+<b>POST Request</b><br>
 It should be accompanied with a JSON object in the body, similar to customer object structure.
 For Eg. - Similar to the structure in insert mentioned above with updated values.
 
-<b>Select All Customers : BASE_URL+/customers</b> 
-<b>GET Request</b>
+<b>Select All Customers : BASE_URL+/customers</b><br>
+<b>GET Request</b><br>
 Nothing to be given in BODY of Request.
 
-<b>Select Customer By ID : BASE_URL+/customers/{customerId}</b>
-<b>GET Request</b>
+<b>Select Customer By ID : BASE_URL+/customers/{customerId}</b><br>
+<b>GET Request</b><br>
 For eg. http://localhost:8080/api/v1/customers/MIMEA
 
-2. Insert, update and select on products
-<b>Insert : BASE_URL+/products</b>
-<b>POST Request</b>
-It should be accompanied with a JSON object in the body, similar to products object structure.
+2. Insert, update and select on products<br>
+<b>Insert : BASE_URL+/products</b><br>
+<b>POST Request</b><br>
+It should be accompanied with a JSON object in the body, similar to products object structure.<br>
 For eg.
 {
         "productId": 1,
@@ -101,27 +100,27 @@ For eg.
         "discontinued": 0
  }
 
-<b>Update : BASE_URL+/products</b>
-<b>POST Request</b>
-It should be accompanied with a JSON object in the body, similar to products object structure.
-For Eg. - Similar to the structure in insert mentioned above with updated values.
+<b>Update : BASE_URL+/products</b><br>
+<b>POST Request</b><br>
+It should be accompanied with a JSON object in the body, similar to products object structure.<br>
+For Eg. - Similar to the structure in insert mentioned above with updated values.<br>
 
-<b>Select All Products : BASE_URL+/products</b> 
-<b>GET Request</b>
-Nothing to be given in BODY of Request.
+<b>Select All Products : BASE_URL+/products</b><br>
+<b>GET Request</b><br>
+Nothing to be given in BODY of Request.<br>
 
-<b>Select Product By ID : BASE_URL+/products/{productId}</b>
-<b>GET Request</b>
-For eg. http://localhost:8080/api/v1/products/1
+<b>Select Product By ID : BASE_URL+/products/{productId}</b><br>
+<b>GET Request</b><br>
+For eg. http://localhost:8080/api/v1/products/1<br>
 
-3. Order history of given customer
-URL - BASE_URL+/customers/orders/{customerId}
+3. Order history of given customer<br>
+URL - BASE_URL+/customers/orders/{customerId}<br>
 <b>GET Request</b>
 For eg. http://localhost:8080/api/v1/customers/orders/"MIMEA"
 
 #### Note: You can also find the above specifications after deploying the rest api, just use the below links
 For UI output
-http://localhost:8080/api/v1/swagger-ui/index.html
+http://localhost:8080/api/v1/swagger-ui/index.html <br>
 
 For JSON Docs ouput
 http://localhost:8080/api/v1/v2/api-docs
