@@ -5,7 +5,7 @@ Rest API for Northwind database
 1.<b>DDL_Statements.sql</b><br>
 File contains the DDL queries for creation of table in the northwind database.
 
-2. <b>Loading_data.sql</b><br>
+2.<b>Loading_data.sql</b><br>
 File contains script for loading data from .csv files.
 <br><b>Note: </b> Please change the .csv file locations according to your local environment in this file.
 
