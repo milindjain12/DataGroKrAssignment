@@ -1,6 +1,26 @@
 # DataGroKrAssignment
 Rest API for Northwind database
 
+# Section 1
+1.<b>DDL_Statements.sql</b> 
+File contains the DDL queries for creation of table in the northwind database.
+
+2. <b>Loading_data.sql</b>
+File contains script for loading data from .csv files.
+<b>Note: </b><br> Please change the .csv file locations according to your local environment in this file.
+
+# Section 2
+<b>Section2_Queries.sql</b>
+This contains below five queries:
+
+1. List all the products with cost above the average price of the products.
+2. Give the identifier, name, and total sales of employees, ordered by the employee identifier for employees who have sold more than 70 different products.
+3. Identify the customers who have active orders.
+4. Find the customer with maximum number of orders.
+5. List all the employees who have sold at least one of the products ‘Gravad Lax’ or ‘Mishi Kobe Niku’.
+
+# Section 3
+
 ## Environment Setup
 1. Install Spring Tool Suite 4 using the link <a href="https://spring.io/tools">Download</a>
 2. Download the Source code from the repository.
